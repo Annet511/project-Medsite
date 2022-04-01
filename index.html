@@ -17,25 +17,66 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="#" class="logo">
-                    <span class="header__logo_img"></span>
-                    <span class="header__logo_text">TULPAR</span>
-                </a>
-                <nav>
-                    <div class="header__nav" id="navbar">
-                        <a class="navlink" href="#">Главная</a>
-                        <a class="navlink" href="#">Наши услуги</a>
-                        <a class="navlink" href="#">Наши услуги</a>
-                        <a class="navlink" href="#">Отчеты</a>
-                        <a class="navlink" href="#">О нас</a>
-                        <a class="navlink" href="#">Услуги</a>
+                <div class="navbar__wrap">
+
+                    <a href="index.html">
+                        <div class="header__logo" id="logo"></div>
+                    </a>
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
                     </div>
-                </nav>
+
+                    <nav class="header__menu menu" id="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Наши услуги</a>
+                                <ul class="sub-menu__list">
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Травма-реабилитационный
+                                            центр</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Кардио-реаблитационный
+                                            центр</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Отчеты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Отчеты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">РУС</a>
+                                <ul class="sub-menu__list">
+                                    <li>
+                                        <a href="#" class="sub-menu__link">РУС</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">KAZ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- <div class="popup" id="popup"></div> -->
             </div>
+            <div class="popup" id="popup"></div>
         </header>
+
         <main class="main">
-
-
             <section class="section">
                 <div class="section__container">
                     <div class="section__left">
@@ -75,108 +116,461 @@
             </section>
 
 
+
+
+            <!-- далее ниже я думамаю  стоит продолжать -->
+            <!-- чтобы было понятно, какой блок у вас идет, пишите также комментарий, что блок такой то начинается и где он закнчивается, чтобы потом было легче их менять местами -->
+
+            <!-- начало блока НАШИ УСЛУГИ -->
+            <section class="services">
+                <div class="services__container">
+                    <h2>наши услуги</h2>
+                    <div class="our__services">
+
+                        <div class="text">
+                            <img src="assets/images/our_services/stethoscope.png" alt="stethoscope">
+                            <p>Кардио-реаблитационный центр </p>
+
+                            <div class="hidden">
+                                <h3>Кардио-реаблитационный центр</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been
+                                    the industry's standard dummy text</p>
+                            </div>
+                        </div>
+
+
+                        <div class="text">
+                            <img src="assets/images/our_services/trauma.png" alt="trauma">
+                            <p>Травма-реабилитационный центр</p>
+
+                            <div class="hidden">
+                                <h3>Травма-реабилитационный центр</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been
+                                    the industry's standard dummy text</p>
+                            </div>
+                        </div>
+
+                        <div class="text">
+                            <img src="assets/images/our_services/cafe.png" alt="cafe">
+                            <p>Кафе еда и еще слова что бы было две строки</p>
+
+                            <div class="hidden">
+                                <h3>Кафе еда и еще слова что бы было две строки</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been
+                                    the industry's standard dummy text</p>
+                            </div>
+                        </div>
+
+                        <div class="text">
+                            <img src="assets/images/our_services/sauna.png" alt="sauna">
+                            <p>Сауна высшего класса для восстановления</p>
+
+                            <div class="hidden">
+                                <h3>Сауна высшего класса для восстановления</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been
+                                    the industry's standard dummy text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button__services"><a href="#"> Все услуги</a></button>
+                </div>
+            </section>
+
+            <!-- конец блока НАШИ УСЛУГИ -->
+
+
+            <!-- начало блока НАШИ СПЕЦИАЛИСТЫ -->
+            <section class="our__specialists title">
+                <div class="specialists__container">
+                    <h2>наши специалисты</h2>
+                    <div class="specialists">
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_one.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy text</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_two.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy text</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_three.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy text</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_four.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy text</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_one.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy text</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_two.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy textч</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_three.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy text</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/our_specialists/doctor_four.png" alt="doctor">
+                            <h3>Доктор Аблай Туркесович</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the
+                                industry's standard dummy text</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--  конец блока НАШИ СПЕЦИАЛИСТЫ -->
+
+
+            <!--начало блоко фото и видео-->
+            <section class="photovideo">
+                <div class="photovideo__container">
+                    <h2 class="photovideo__title title">фото и видео отчеты</h2>
+                    <div class="photovideo__nav">
+                        <a class="photovideo__nav_item" href="#">показать все</a>
+                        <a class="photovideo__nav_item" href="#">только фото</a>
+                        <a class="photovideo__nav_item" href="#">только видео</a>
+                    </div>
+                    <div class="photovideo__list">
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item1"
+                                src="assets/images/photovideo/1.png" alt="1">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item2"
+                                src="assets/images/photovideo/2.png" alt="2">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item3"
+                                src="assets/images/photovideo/3.png" alt="3">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item4"
+                                src="assets/images/photovideo/4.png" alt="4">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item5"
+                                src="assets/images/photovideo/5.png" alt="5">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item6"
+                                src="assets/images/photovideo/6.png" alt="6">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item7"
+                                src="assets/images/photovideo/7.png" alt="7">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item8"
+                                src="assets/images/photovideo/8.png" alt="8">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item9"
+                                src="assets/images/photovideo/9.png" alt="9">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item10"
+                                src="assets/images/photovideo/10.png" alt="10">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item11"
+                                src="assets/images/photovideo/11.png" alt="11">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                        <div class="photovideo__list_hover">
+                            <img class="photovideo__list_item photovideo__list_item12"
+                                src="assets/images/photovideo/12.png" alt="12">
+                            <span class="photovideo__list_text">Название фото в две строки максимум</span>
+                        </div>
+                    </div>
+                    <div class="button__container">
+                        <button class="photovideo__button">Показать все</button>
+                    </div>
+                    <img class="line1" src="assets/images/photovideo/line.png" alt="line">
+                    <img class="line2" src="assets/images/photovideo/line.png" alt="line">
+                </div>
+
+            </section>
+
+
+            <!--конец блока фото и видео-->
+
+
+
+
+
+
+
+
+
+
+            <!-- начало блока ВОПРОСЫ-ОТВЕТЫ -->
+            <section class="faq">
+                <div class="faq__container">
+                    <h2 class="faq__title title">вопрос ответ</h2>
+                    <div class="faq__content">
+                        <ul class="faq__questions">
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 1</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text answer-blok__text_included">
+                                            <h6>Ответ 1</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                                ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only
+                                                five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. It was popularised in the 1960s with the
+                                                release
+                                                of Letraset sheets containing Lorem Ipsum passages, and more
+                                                recently
+                                                with desktop publishing software like Aldus PageMaker including
+                                                versions
+                                                of Lorem.<br>
+                                                <br>
+                                                Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard
+                                                dummy
+                                                text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only
+                                                five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. It was popularised in the 1960s with the
+                                                release
+                                                of Letraset sheets containing Lorem Ipsum passages, and more
+                                                recently
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 2</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text">
+                                            <h6>Ответ 2</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the
+                                                printing
+                                                and
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 3</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text">
+                                            <h6>Ответ 3</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the
+                                                printing
+                                                and
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 4</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text">
+                                            <h6>Ответ 4</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the
+                                                printing
+                                                and
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 5</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text">
+                                            <h6>Ответ 5</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the
+                                                printing
+                                                and
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 6</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text">
+                                            <h6>Ответ 6</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the
+                                                printing
+                                                and
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 7</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text">
+                                            <h6>Ответ 7</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the
+                                                printing
+                                                and
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="faq__list">
+                                <div class="faq__block faq-blok">
+                                    <h6 class="faq-blok__question">Вопрос 8</h6>
+                                    <div class="faq-blok__answer answer-blok">
+                                        <div class="answer-blok__button"></div>
+                                        <div class="answer-blok__text">
+                                            <h6>Ответ 8</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the
+                                                printing
+                                                and
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- конец блока ВОПРОСЫ-ОТВЕТЫ -->
+
+            <!-- начало блока НАШИ КОНТАКТЫ -->
+            <section class="contacts">
+                <div class="contacts__container">
+                    <div class="contacts__content">
+                        <h2 class="contacts__title title">Контакты</h2>
+                        <div class="contacts__maps">
+                            <iframe class="maps" src="https://yandex.ru/map-widget/v1/-/CCUBFTSNCA" width="100%"
+                                height="360" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+
+                        <div class="contacts__menu">
+                            <div class="contacts__menu menu-contacts">
+                                <h6 class="menu-contacts__title">Адреса компании</h6>
+                                <div class="menu-contacts__block">
+                                    <address class="menu-contacts__address"> Ул. Пичугина 240/1, г. Караганда, 100000,
+                                        Казахстан
+                                    </address>
+                                </div>
+                            </div>
+
+                            <div class="contacts__menu menu-contacts">
+                                <h6 class="menu-contacts__title">Номера телефонов</h6>
+                                <div class="menu-contacts__block">
+                                    <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
+                                    <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
+                                </div>
+                            </div>
+
+                            <div class="contacts__menu menu-contacts">
+                                <h6 class="menu-contacts__title">Дополнительные способы связи</h6>
+                                <div class="menu-contacts__block">
+                                    <a href="support@test.kz" class="email">support@test.kz</a>
+                                    <a href="support@test.kz" class="email">support@test.kz</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- конец блока НАШИ КОНТАКТЫ -->
+
         </main>
-
-
-        <!-- далее ниже я думамаю  стоит продолжать -->
-        <!-- чтобы было понятно, какой блок у вас идет, пишите также комментарий, что блок такой то начинается и где он закнчивается, чтобы потом было легче их менять местами -->
-
-        <!-- Например далее тут начинается блок НАШИ УСЛУГИ -->
-
-
-
-
-        <!-- вот тут блок НАШИ УСЛУГИ закончился  -->
-
-
-        <!-- Например далее тут начинается блок НАШИ СПЕЦИАЛИСТЫ -->
-
-
-
-
-        <!-- вот тут блок НАШИ СПЕЦИАЛИСТЫ закончился  -->
-
-
-        <!-- блок фото и видео отчеты -->
-        <section class="photovideo">
-            <div class="photovideo__container">
-                <h2 class="photovideo__title title">фото и видео отчеты</h2>
-                <div class="photovideo__nav">
-                    <a class="photovideo__nav_item" href="#">показать все</a>
-                    <a class="photovideo__nav_item" href="#">только фото</a>
-                    <a class="photovideo__nav_item" href="#">только видео</a>
-                </div>
-                <div class="photovideo__list">
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/1.png" alt="1">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/2.png" alt="2">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/3.png" alt="3">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/4.png" alt="4">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/5.png" alt="5">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/6.png" alt="6">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/7.png" alt="7">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/8.png" alt="8">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/9.png" alt="9">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/10.png" alt="10">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/11.png" alt="11">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                    <div class="photovideo__list_hover">
-                        <img class="photovideo__list_item" src="/assets/images/photovideo/12.png" alt="12">
-                        <span class="photovideo__list_text">Название фото в две строки максимум</span>
-                    </div>
-                </div>
-                <div class="button__container">
-                    <button class="photovideo__button">Показать все</button>
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -191,7 +585,7 @@
                 <div class="footer__main">
                     <div class="footer__column">
                         <a href="#">
-                            <img class="footer__logo" src="assets/images/logo-ft.svg" alt="logo" />
+                            <img class="footer__logo" src="assets/images/footer/logo-ft.svg" alt="logo" />
                         </a>
                     </div>
                     <div class="footer__column">
@@ -202,7 +596,7 @@
                                     <a href="#" class="menu-footer__link">Главная</a>
                                     <a href="#" class="menu-footer__link">Наши услуги</a>
                                     <a href="#" class="menu-footer__link">Отчеты</a>
-                                    <a href="#" class="menu-footer__link">О нас</a>
+                                    <a href="about.html" class="menu-footer__link">О нас</a>
                                     <a href="#" class="menu-footer__link">Контакты</a>
                                 </li>
                             </ul>
@@ -211,27 +605,27 @@
                     <div class="footer__column">
                         <div class="footer__label">Связаться с нами</div>
                         <div class="footer__contacts">
-                            <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
-                            <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
-                            <a href="mailto:coffee@gmail.com" class="email">support@test.kz</a>
+                            <a href="tel:+77000000000" class="tel tel_white">+7 700 000 00 00</a>
+                            <a href="tel:+77000000000" class="tel tel_white">+7 700 000 00 00</a>
+                            <a href="support@test.kz" class="email email_white">support@test.kz</a>
                         </div>
                         <div class="footer__social social">
                             <a href="https://www.facebook.com/" class="social__item"><img
-                                    src="assets/images/icon-facebook.svg" alt="facebook" /> </a>
+                                    src="assets/images/footer/icon-facebook.svg" alt="facebook" /> </a>
                             <a href="https://www.google.com/" class="social__item"><img
-                                    src="assets/images/icon-google.svg" alt="google" /> </a>
+                                    src="assets/images/footer/icon-google.svg" alt="google" /> </a>
                             <a href="https://www.facebook.com/" class="social__item"><img
-                                    src="assets/images/icon-facebook.svg" alt="facebook" /> </a>
+                                    src="assets/images/footer/icon-facebook.svg" alt="facebook" /> </a>
                             <a href="https://www.google.com/" class="social__item"><img
-                                    src="assets/images/icon-google.svg" alt="google" /> </a>
+                                    src="assets/images/footer/icon-google.svg" alt="google" /> </a>
                         </div>
                     </div>
                 </div>
                 <p class="footer__copyright">© Все права защищены 2019 “Тулпар”</p>
             </div>
         </footer>
-
     </div>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
